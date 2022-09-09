@@ -11,7 +11,7 @@ namespace Training
 
         public void calculateTax(double BasicAmount)
         {
-            Console.WriteLine("base class");
+            //Console.WriteLine("base class");
             double VatValue = (BasicAmount * 0.20);
             Console.WriteLine(VatValue + BasicAmount);
 
@@ -21,7 +21,7 @@ namespace Training
     {
         public new void calculateTax(double BasicAmount)
         {
-            Console.WriteLine("derived class");
+            //Console.WriteLine("derived class");
             double GstValue = (BasicAmount * 0.12);
             Console.WriteLine(GstValue + BasicAmount);
         }
