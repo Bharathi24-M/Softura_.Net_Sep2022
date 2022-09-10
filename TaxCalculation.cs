@@ -9,11 +9,12 @@ namespace Training
     class VatTax //base class
     {
 
-        public void calculateTax(double BasicAmount)
+        public  void calculateTax(double BasicAmount)
         {
-            //Console.WriteLine("base class");
+
+            
             double VatValue = (BasicAmount * 0.20);
-            Console.WriteLine(VatValue + BasicAmount);
+            Console.WriteLine("The VAT Amount is: " +VatValue);
 
         }
     }
@@ -21,9 +22,9 @@ namespace Training
     {
         public new void calculateTax(double BasicAmount)
         {
-            //Console.WriteLine("derived class");
+            
             double GstValue = (BasicAmount * 0.12);
-            Console.WriteLine(GstValue + BasicAmount);
+            Console.WriteLine("The GST Amount is:"+GstValue);
         }
     }
     internal class TaxCalculation 
@@ -32,11 +33,17 @@ namespace Training
         {
             Console.WriteLine("Enter the Amount");
             double Amount = Convert.ToDouble(Console.ReadLine());
-            VatTax tax = new VatTax();
-            GstTax tax1 = new GstTax();
-            tax.calculateTax(Amount);
-            tax1.calculateTax(Amount);
+            GstTax gobj=new GstTax();
+            gobj.calculateTax(Amount);
+            VatTax vobj = new GstTax();
+            vobj.calculateTax(Amount);
 
         }
     }
+}
+    
+    
+
+        
+    
 }
