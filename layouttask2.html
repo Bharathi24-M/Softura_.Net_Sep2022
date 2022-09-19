@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 15px;
+            background-color:White;
+            padding: 10px;
+        }
+
+            .grid-container div {
+                background-color:cornflowerblue;
+                text-align: center;
+                padding: 20px 0;
+                border-bottom: 30px solid orange;
+                height: 200px;
+                width: 310px;
+            }
+
+
+        header {
+            background-color: orange;
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+        footer {
+            background-color: orange;
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Health centre</h1>
+    </header>
+    <div class="grid-container">
+        <div>
+            Menu<br />1<br />2<br />3<br />4<br />5<br />6<br />login
+        </div>
+
+        <div>1</div>
+        <div>2</div>
+        <div>
+            <lable>Login:</lable>
+            <input type="text" /><br />
+            <label> Password:</label>
+            <input type="text" /><br />
+            <input type="button" value="Login" style="color:black" />
+        </div>
+        <div>1</div>
+        <div>2</div>
+        <div>1</div>
+        <div>2</div>
+
+    </div>
+    <footer></footer>
+</body>
+</html>
